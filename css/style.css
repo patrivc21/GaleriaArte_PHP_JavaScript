@@ -1,0 +1,363 @@
+
+html, body{
+    height: 94%;
+    width: 100%;
+    font-family: 'Arial';
+    background-image: url(../imagenes/fondo9.webp);
+    /*background-color: rgba(255, 255, 255, 0.438);*/
+    background-size: 100% 100%;
+}
+
+/* 
+************************
+Estilo para la cabecera 
+************************
+*/
+
+header{
+    width: 100%;
+    display: flex;
+    height: 25%;
+    background-color: rgba(175, 175, 175, 0.438);
+    background-size: 100% 100%;
+}
+
+.logo{
+    width: 25%;
+    margin: auto;
+    float: left;
+}
+
+.titulo{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Serif';
+}
+
+.formulario{
+    width: 25%;
+    margin: auto;
+    float: right;
+    font-size: small;
+}
+
+/* Para poder cambiar el tamano de la imagen y situarla donde queremos */
+.logo img{
+    width: 35%;
+    height: 40%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+nav{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.884);
+    border: 1px solid rgba(175, 175, 175, 0);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 100px;
+}
+
+
+a.link-h{
+    text-decoration: underline;
+}
+
+a.link-sub:link, a.link-sub:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a.link-t:visited{
+    text-decoration: none;
+    color: black;
+}
+/* 
+*****************************
+Estilo para el pie de pagina 
+*****************************
+*/
+
+.pie{
+    clear: both;
+    margin-top: 5px;
+    width: 100%;
+    height: 6%;
+    border: 1px solid rgba(175, 175, 175, 0.438);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    padding: auto;
+}
+
+
+/* 
+*******************
+Estilo para el main
+*******************
+*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.438);
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+.expos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 60%;
+    padding: 50px;
+    flex-direction: row;
+    border: 1px solid rgba(37, 37, 37, 0.438);
+    background-color: rgba(255, 255, 255, 0.438);
+    overflow: scroll;
+}
+
+.ti{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Serif';
+}
+
+.articulo{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex: 35%;
+    margin: 40px;
+    width: 30%;
+    border: 1px solid rgba(37, 37, 37, 0.438);
+    background-color: rgba(255, 255, 255, 0.541);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+
+/* 
+********************
+Estilo para el aside
+********************m
+*/
+
+.izq {
+    display: flex;
+    border: 1px solid rgba(37, 37, 37, 0.438);
+    flex: 50px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.izq > section.titular, section.titular1, section.titular2, section.titular3, section.titular4 {
+    border: 1px solid rgba(37, 37, 37, 0.438);
+    background-color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.titular1 ul li{
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+/* 
+*******************************************************************
+Estilo para contacto.html
+*******************************************************************
+*/
+
+.contacto{
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.informacion{
+    background-color: rgba(255, 255, 255, 0.699);
+    flex: auto;
+    display: block;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 
+*******************************************************************
+Estilo para las exposiciones
+*******************************************************************
+*/
+
+.expo1{
+    display: flex;
+    background-color: rgba(255, 251, 251, 0.822);
+    font-family: 'Serif';
+    overflow: hidden;
+    height: auto; /*si queremos scroll, quitar esto y el overflow*/
+}
+
+img{
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.expo1 > section.informacion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 23px;
+    margin-left: 60px;
+    padding: 20px;
+    text-align: center;
+    flex: 60%;
+    background-color: rgba(255, 251, 251, 0.021);
+}
+
+.informacion p{
+    flex: 40%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.expo1 > section.imagenes{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 30%;
+    margin: 20px;
+    width: 25%;
+    text-align: center;
+    background-color: rgba(255, 251, 251, 0.021);
+}
+
+.piezas{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 
+*******************************************************************
+Estilo para los registros
+*******************************************************************
+*/
+
+.registro1{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.registro{
+    font-size: 20px;
+    background-color: white;
+    font-family: 'Serif';
+}
+
+.rh1{
+    background-color: white;
+    text-align: center;
+    font-family: 'Serif';
+}
+
+/* 
+*******************************************************************
+Cuando usemos movil/monitor
+*******************************************************************
+*/
+
+@media (max-width: 767px){
+    header, main, footer{
+        display: block;
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    nav{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    nav ul li{
+        display: inline;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .formulario{
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .logo{
+        display: block;
+        float: none;
+    }
+
+    .expo1 > section.imagenes{
+        display: block;
+        width: 100%;
+    }
+
+    img{
+        width: 200px;
+        display: block;
+        margin-top: 0px;
+    }
+    
+    .expo1 > section.informacion{
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 0%;
+      
+    }
+}
+
+@media (max-width: 480px) {
+    img{
+        width: 150px;
+        display: block;
+    }
+
+    .articulo{
+        width: 100%;
+        height: 100%;
+    }
+}
